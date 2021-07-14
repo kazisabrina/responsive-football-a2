@@ -143,6 +143,21 @@ p{
 .highlight-image img{
     width: 100%;
 }
+/* --------------bonus---------- */
+.matchlive h1{
+    font-size: 30px;
+    text-align: center;
+}
+.matches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+    border: 10px solid transparent;
+    width:400px;
+    height:300px;
+}
 /* ---------footer styles----------- */
 footer{
     display: flex;
@@ -163,4 +178,22 @@ footer{
     font-size: 22px;
     color: palevioletred;
     margin-right: 10px;
+}
+
+.nextmatch{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+caption{
+    font-size: 30px;
+    text-align: center;
+}
+table{
+    border: 5px solid plum;
+}
+tr,td{
+    padding: 5px;
+    margin: 5px;
 }
