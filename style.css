@@ -5,7 +5,7 @@ body{
 }
 /* header styles */
 header{
-    width: 100%;
+    width: 1349px;
     height: 677px;
     background: #2D25A0;
     margin-bottom: 70px;
@@ -197,3 +197,101 @@ tr,td{
     padding: 5px;
     margin: 5px;
 }
+
+/*--------------------
+    media queries
+ ------------------- */
+
+ /* mobile devices */
+ @media only screen and (max-width: 688px){
+    
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0;
+    }
+     nav{
+         margin-left: 0px;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+     }
+     nav ul{
+         padding-left: 0;
+     }
+     nav>li a{
+         font-size: 5px;
+     }
+     .main-header{
+         flex-direction: column;
+     }
+     .header-text{
+         margin-top: 8px;
+         margin-left: 0px;
+         margin-bottom: 0px;
+     }
+     .header-text h1{
+         font-size: 18px;
+     }
+     .banner-img{
+         width: 30%;
+     }
+     .card{
+         width: 100%;
+         margin-left: 0px;
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .highlights, .matchlive{
+         width: 100%;
+         flex-direction: column;
+         align-items: flex-start;
+         padding-top: 0px;
+         margin-left: 0px;
+     }
+     .highlight-text h1{
+         font-size: 30px;
+     }
+     iframe{
+         width:100%
+     }
+     .matches{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0px;
+     }
+     .matchlive{
+         flex-direction: column;
+     }
+     .nextmatch{
+         margin: 0%;
+     }
+     footer{
+         flex-direction: column;
+         align-items: flex-start;
+         margin-left: 0px;
+     }
+     .logo img{
+         width:50%;
+     }
+ }
+ /* tablet devices */
+ @media only screen and (min-width: 688px) and (max-width: 922px) {
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-left: 370px;
+    }
+    .matches{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 370px;
+     }
+ }
